@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah's Ark Veterinary Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="petservices.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <header>
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="logo2.png" alt="Noah's Ark Veterinary Clinic Logo">
+                 </a>
+                <div class="divider hide-mobile"></div>
+                <a href="#" class="home hide-mobile">Home</a>
+                </div>
+            <nav>
+                <a href="#" class="menu-open hide-desktop">
+                    <img src="menu.svg" alt="Open menu">
+                    <ul>
+                    <li class="hide-desktop">
+                        <a href="#" class="menu-close">
+                            <img src="close.svg" alt="Close menu">
+                    <li><a href="petservices.html">Pet Services</a></li>
+                    <li><a href="petfoods.html">Pet Foods</a></li>
+                    <li><a href="petvitamins.html">Pet Vitamins</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <p><b>Pet Services</b></p>
+        <p>Our clinic provides different pet services such as grooming, 
+            operations and many more to solve your furry problems!</p>
+                
+            <div class="body">
+            <div class="wrap">
+            <div class="card">
+                <div class="wow"><img src="doggrooming.png" alt="doggrooming" width="100%"></div>
+                <div class="container">
+                    <h2>Dog Grooming</h2>
+                    <p>Bring your furry companions to our clinic for expert grooming that 
+                        goes beyond just aesthetics. Our experienced team ensures a stress-free 
+                        environment and personalized care tailored to your pet's unique needs.</p>
+                </div>
+             </div>
+             </div>
+            
+             <div class="wrap">
+                <div class="card">
+                <div class="wow"><img src="vaccination.jpg" alt="dogvaccination"></div>
+                <div class="container">
+                    <h2>Vaccination</h2>
+                    <p>Bring your furry companions to our clinic for expert grooming that 
+                        goes beyond just aesthetics. Our experienced team ensures a stress-free 
+                        environment and personalized care tailored to your pet's unique needs.</p>
+                </div>
+             </div>
+             </div>
+    
+             <div class="wrap">
+                <div class="card">
+                <div class="wow"><img src="surg.jpg" alt="dogsurgery"></div>
+                <div class="container">
+                    <h2>Surgery</h2>
+                    <p>Bring your furry companions to our clinic for expert grooming that 
+                        goes beyond just aesthetics. Our experienced team ensures a stress-free 
+                        environment and personalized care tailored to your pet's unique needs.</p>
+                </div>
+             </div>
+            </div>
+            </div>
+
+            <script>
+
+                const menu = document.querySelector('nav ul');
+                const menuBtn = document.querySelector('.menu-open');
+                const closeBtn = document.querySelector('.menu-close');
+        
+                menuBtn.addEventListener('click', () => {
+                    menu.classList.add('open')
+                })
+        
+                closeBtn.addEventListener('click', () => {
+                    menu.classList.remove('open')
+                })
+        
+            </script>
+        
+    </body>
+    </html>

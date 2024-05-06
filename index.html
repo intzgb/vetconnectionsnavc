@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah's Ark Veterinary Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <header>
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="logo2.png" alt="Noah's Ark Veterinary Clinic Logo">
+                </a>
+                <div class="divider hide-mobile"></div>
+                <a href="#" class="home hide-mobile">Home</a>
+                </div>
+            <nav>
+                <a href="#" class="menu-open hide-desktop">
+                    <img src="menu.svg" alt="Open menu">
+                    </a>
+                    <ul>
+                    <li class="hide-desktop">
+                        <a href="#" class="menu-close">
+                            <img src="close.svg" alt="Close menu">
+                            </a>
+                            </li>
+                    <li><a href="petservices.html">Pet Services</a></li>
+                    <li><a href="petfoods.html">Pet Foods</a></li>
+                    <li><a href="petvitamins.html">Pet Vitamins</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>      
+
+        <main>
+            <h1>A pawsome service for your pet!</h1>
+            <p class="subhead">
+                The only best care for your furry companions with our service. 
+                Made with love straight from the heart of our hardworking 
+                veterinarians and assistants.
+            </p>
+            <a href="aboutus.html" class="primary-cta">About Us</a>
+        </main>
+
+        <div class="cat-container">
+            <div class="cat">
+                <img src="cat.png" alt="cat illustration">
+                <div class="inner-circle"></div>
+                <div class="outer-circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const menu = document.querySelector('nav ul');
+        const menuBtn = document.querySelector('.menu-open');
+        const closeBtn = document.querySelector('.menu-close');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.add('open')
+        })
+
+        closeBtn.addEventListener('click', () => {
+            menu.classList.remove('open')
+        })
+
+    </script>
+
+</body>
+</html>

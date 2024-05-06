@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah's Ark Veterinary Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <header>
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="logo2.png" alt="Noah's Ark Veterinary Clinic Logo">
+                </a>
+                <div class="divider hide-mobile"></div>
+                <a href="#" class="home hide-mobile">Home</a>
+                </div>
+            <nav>
+                <a href="#" class="menu-open hide-desktop">
+                    <img src="menu.svg" alt="Open menu">
+                    <ul>
+                    <li class="hide-desktop">
+                        <a href="#" class="menu-close">
+                            <img src="close.svg" alt="Close menu">
+                    <li><a href="petservices.html">Pet Services</a></li>
+                    <li><a href="petfoods.html">Pet Foods</a></li>
+                    <li><a href="petvitamins.html">Pet Vitamins</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>  
+        
+        <div class="text-container">
+            <h2>History Of Noah's Ark Veterinary Clinic</h2>
+         </div>
+
+        <p>Noah's Ark Veterinary Clinic is founded in the 2000s in Nueva Ecija. 
+        It was made by a group of veterinarians. They loved animals a lot.
+        In the start, they had a small place and only a few workers.
+        At first, they did not have a lot of money or tools. 
+        But the veterinarians did not give up and pursue the clinic because of their 
+        love to animals and the desire to help them. They wanted to help sick pets to feel better. 
+        They also taught pet owners how to take good care of their pets.
+        Even though it was challenging to start a new business, people soon heard about how good 
+        Noah's Ark Veterinary Clinic was. Lots of pet owners in Nueva Ecija came to the clinic, 
+        worn by its reputation for compassion, expertise, and personalized attention.
+        As the years passed, Noah’s Ark Veterinary Clinic grew slowly but surely, gaining the trust 
+        and loyalty of the community. With this growing support, the clinic expanded its facilities and services, 
+        having different branches across Nueva Ecija.
+    </p>
+
+        <div class="image-container">
+            <img src="clinic.jpg" alt="clinic">
+        </div>
+
+        <script>
+
+            const menu = document.querySelector('nav ul');
+            const menuBtn = document.querySelector('.menu-open');
+            const closeBtn = document.querySelector('.menu-close');
+    
+            menuBtn.addEventListener('click', () => {
+                menu.classList.add('open')
+            })
+    
+            closeBtn.addEventListener('click', () => {
+                menu.classList.remove('open')
+            })
+    
+        </script>
+        
+
+    </body>
+    </html>

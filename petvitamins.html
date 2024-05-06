@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah's Ark Veterinary Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="petvitamins.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <header>
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="logo2.png" alt="Noah's Ark Veterinary Clinic Logo">
+                </a>
+                <div class="divider hide-mobile"></div>
+                <a href="#" class="home hide-mobile">Home</a>
+                </div>
+            <nav>
+                <a href="#" class="menu-open hide-desktop">
+                    <img src="menu.svg" alt="Open menu">
+                    <ul>
+                    <li class="hide-desktop">
+                        <a href="#" class="menu-close">
+                            <img src="close.svg" alt="Close menu">
+                    <li><a href="petservices.html">Pet Services</a></li>
+                    <li><a href="petfoods.html">Pet Foods</a></li>
+                    <li><a href="petvitamins.html">Pet Vitamins</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>   
+
+        <p><b>Pet Vitamins</b></p>
+
+        <p>To ensure your pet's health at its best.
+             We have various vitamins to make your furry friend's health strong!</p>
+
+             <div class="text-container">
+                <h2>Vitamins</h2>
+             </div>
+
+             <div class="r"> 
+            </div>
+
+             <div class="wrapper">
+                <div class="wow"><img src="lcvit.jpg" alt="LCvit"></div>
+                <div class="text-box">
+                    <h2>LC Vit</h2>
+                    <p>Treats vitamin deficiencies especially when in high-stress conditions.
+                     Improves appetite and general health. Prevents and treats vitamin deficiencies 
+                     during stress conditions in dogs, cats, rabbits, hamsters, and chinchillas.</p>
+                </div>
+             </div>
+
+             <div class="wrapper">
+                <div class="wow"><img src="canicee(1).jpg" alt="canicee"></div>
+                <div class="text-box">
+                    <h2>Canicee</h2>
+                    <p>Canicee is an excellent vitamin supplement essential in the formation of collagen 
+                        in the body. It aids in the proper development of cartilage, bones and teeth.</p>
+                </div>
+             </div>
+
+             <div class="wrapper">
+                <div class="wow"><img src="coatshine(1).jpg" alt="coatshine"></div>
+                <div class="text-box">
+                    <h2>Coatshine</h2>
+                    <p>Provides vital vitamins and minerals for healthy and strong hair growth. 
+                        Enhances the appetite of your four legged friends. To make them even more 
+                        healthy and beautiful use with Hair and Skin enhancing dry or wet food.</p>
+                </div>
+             </div>
+
+             <script>
+
+                const menu = document.querySelector('nav ul');
+                const menuBtn = document.querySelector('.menu-open');
+                const closeBtn = document.querySelector('.menu-close');
+        
+                menuBtn.addEventListener('click', () => {
+                    menu.classList.add('open')
+                })
+        
+                closeBtn.addEventListener('click', () => {
+                    menu.classList.remove('open')
+                })
+        
+            </script>
+
+    </body>
+    </html>

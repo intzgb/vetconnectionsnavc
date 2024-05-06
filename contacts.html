@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah's Ark Veterinary Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <header>
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="logo2.png" alt="Noah's Ark Veterinary Clinic Logo">
+                </a>
+                <div class="divider hide-mobile"></div>
+                <a href="#" class="home hide-mobile">Home</a>
+                </div>
+            <nav>
+                <a href="#" class="menu-open hide-desktop">
+                    <img src="menu.svg" alt="Open menu">
+                    <ul>
+                    <li class="hide-desktop">
+                        <a href="#" class="menu-close">
+                            <img src="close.svg" alt="Close menu">
+                    <li><a href="petservices.html">Pet Services</a></li>
+                    <li><a href="petfoods.html">Pet Foods</a></li>
+                    <li><a href="petvitamins.html">Pet Vitamins</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>   
+
+        <p><b>Contacts</b></p>
+
+        <div class="text-container">
+            <p><b>Main Branch: 258 San Juan Accfa, Cabanatuan City</b></p>
+            <p><b>Tel no: (044) 456-9875, 0917-686-9703</b></p>
+        </div>
+
+        <div class="text-container">
+            <p><b>McArthur Highway, Brgy. Valenzuela, Sta. Rosa, Nueva Ecija</b></p>
+            <p><b>Tel no: 0917-109-7665, (044) 486-3081</b></p>
+        </div>
+
+        <div class="text-container">
+            <p><b>Tinio St. San Vicente (near Gapan South Central School), Gapan City, Nueva Ecija</b></p>
+            <p><b>Tel no: 0917-637-3549</b></p>
+        </div>
+
+        <div class="text-container">
+            <p><b>Mustangs Veterinary Clinic, San Jose City, Nueva Ecija</b></p>
+            <p><b>Tel no: 0917-136-2578, 0969-154-0450</b></p>
+        </div>
+
+        <div class="inner-circle">
+            <div class="outer-circle">
+            </div>
+        </div>
+
+        <script>
+
+            const menu = document.querySelector('nav ul');
+            const menuBtn = document.querySelector('.menu-open');
+            const closeBtn = document.querySelector('.menu-close');
+    
+            menuBtn.addEventListener('click', () => {
+                menu.classList.add('open')
+            })
+    
+            closeBtn.addEventListener('click', () => {
+                menu.classList.remove('open')
+            })
+    
+        </script>
+
+    </body>
+    </html>
